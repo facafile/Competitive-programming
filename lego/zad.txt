@@ -1,0 +1,45 @@
+A. Lego
+time limit per test2 seconds
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Mirko se igra s novim setom lego kockica. Kockice je postavio na ploču koju možemo prikazati kao matricu veličine N * N. Mirko je u matricu postavio kockice dimenzija 1 * 1. Za svako polje je poznata visina kockica u tom polju Hi, j. Mirko sada želi izjednačiti visine svih polja na sljedeći način:
+
+uklanjanjem jedne kockice s vrha polja
+dodavanjem nove kockice na vrh polja(Mirko posjeduje beskonačno kockica za dodavanje)
+Mirku se jako žuri jer uskoro počinje nova epizoda Braka na prvu pa ima vremena izjednačiti samo dio matrice. Točnije, može birati između dijela matrice iznad i dijela matrice ispod glavne dijagonale. Kako mu se žuri također želi napraviti što je manje moguće poteza.
+Input
+U prvom retku se nalazi N(2 ≤ N ≤ 500) iz teksta zadatka.
+
+U i-tom od sljedećih N redaka se nalazi N brojeva od kojih j-ti predstavlja visinu Hi, j(0 ≤ Hi, j ≤ 109) tog polja.
+
+Output
+Ispišite minimalan broj poteza koji Mirko mora napraviti kako bi polja iznad ili ispod glavne dijagonale bila jednake visine.
+
+Scoring
+U zadatku je moguće dobiti parcijalne bodove za rješenje nešto lakših podzadataka sa smanjenim ograničenjima.
+
+Ograničenja	Bodovi
+N ≤ 50, Hi, j ≤ 1	1
+N ≤ 50, Hi, j ≤ 10	2
+N ≤ 50	3
+—	5
+Examples
+input
+3
+0 0 1
+1 0 1
+0 1 1
+output
+1
+input
+4
+7 8 10 6
+2 4 4 1
+1 3 10 0
+4 7 0 0
+output
+11
+Note
+Glavna dijagonala sadrži polja sa istom X i Y koordinatom
+

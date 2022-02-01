@@ -1,0 +1,27 @@
+Brzina. Brzina. Ja sam brzina!
+
+Speedy Gonzales ima jednostavan zadatak za vas, pomognite mu da pokupi što više sireva. Trenutno se nalazi u čudnovatoj pustinji oblika kvadrata veličine N, N je neparan. Na određenim pozicijama nalaze sirevi. Speedy Gonzales kreće od gornjeg lijevog kuta pustinje (1, 1). Gonzales se u načelu može kretati u jednom od 3 smjera: lijevo, desno i dolje. Zbog svoje brzine, kada jednom odabere horizontalan smjer (lijevo ili desno) u nekom redu, ne može mijenjati smjer sve dok se ne spusti u red niže kada opet ima izbor između lijevo, desno i dolje. Pomognite Speedy Gonzalesu odabrati najbolji put do donjeg desnog kuta pustinje (n, n) i skupiti što više sireva.
+
+Input
+U prvom redu nalazi se neparan broj n (1 ≤ n ≤ 1000).
+
+U sljedećih n redaka se nalazi po n brojeva x (0 ≤ x ≤ 8000) koji označavaju koliko sireva se nalazi na određenoj lokaciji.
+
+Output
+Ispišite najveću količinu sireva koju Speedy Gonzales može pokupiti krećući se na opisani način.
+
+Example
+input
+5
+0 0 0 5 0
+0 5 1 0 0
+1 1 0 0 0
+0 0 0 0 0
+0 0 0 3 4
+output
+20
+Note
+Za prvi testni primjer jedan od mogućih načina kretanja Gonzalesa je:
+
+Za prvi redak smjer kretanja je desno, a stupac spuštanja je 4. Za drugi redak smjer kretanja je lijevo, a stupac spuštanja je 2. Za treći redak smjer kretanja je lijevo, a stupac spuštanja je 1. Za četvrti redak se odmah spuštamo dalje. Za peti redak smjer kretanja je desno.
+

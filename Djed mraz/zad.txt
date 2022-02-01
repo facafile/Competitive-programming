@@ -1,0 +1,35 @@
+Djed Mraz je imao gomilu problema s dostavom jer su mu sobovi u izolaciji pa se odmah nakon Božića počeo pripremati za iduću godinu. Napravio je graf svih N gradova koje treba posjetiti te označio ceste koje ih povezuju (i koliko mu treba vremena za proći pojedinu cestu). Svaki je grad označen prirodnim brojem (2-N), a Sjeverni Pol odakle kreću Djedove saonice označen je brojem 1. Dostavljanje poklona uz lošu organizaciju može biti prilično dug posao pa Djed želi sve obaviti u najkraćem mogućem vremenu. Ograničen je jedino veličinom svojih saonica u koje taman stanu pokloni za djecu u jednom gradu. Svaki put kada završi s nekim gradom, Djed se treba vratiti na Sjeverni Pol po novu vreću poklona. Pomozite Djedu Mrazu otkriti koje je minimalno vrijeme u kojem može obići sve gradove. Napomena: Može postojati više direktnih poveznica između 2 grada.
+
+Input
+U prvom se redu nalaze brojevi N i M (1 ≤ N, M ≤ 105) koji redom označavaju broj gradova i cesta koje ih povezuju. U sljedećih se M redova nalaze po tri broja odvojena razmakom (g1 g2 t) gdje su g1 i g2 oznake gradova koji su povezani cestom, a t (t ≤ 105) vrijeme (u sekundama) potrebno Djedu da prođe cestu sa svojim saonicama.
+
+Output
+Ispišite minimalno vrijeme za koje će Djed dostaviti sve poklone.
+
+Scoring
+U zadatku je moguće dobiti parcijalne bodove za rješenje nešto lakših podzadataka sa smanjenim ograničenjima.
+
+Ograničenja	Bodovi
+N ≤ 100	1
+gradovi čine stablo	1
+gradovi čine ciklus	1
+—	5
+Examples
+input
+3 2
+1 2 2
+2 3 3
+output
+9
+input
+5 6
+1 2 5
+1 3 7
+1 5 1
+2 4 4
+2 5 2
+3 4 6
+output
+29
+Note
+Primjer 1: Prvo ostavi poklone u gradu 2 i vrati se na Sjeverni Pol (1) - 4 sekunde. Potom odlazi do grada 3 i tamo ostavlja preostale poklone za što mu treba još 5 sekundi - ukupno 9 sekundi.

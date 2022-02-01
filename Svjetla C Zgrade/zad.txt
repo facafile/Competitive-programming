@@ -1,0 +1,88 @@
+Mali Mislav je na FER-ovoj brucošijadi izišao na svjež zrak u dvorište KSET-a.
+
+Gledajući tako gore u ogromnu C zgradu, zapitao se u kojim su zavodima najzagriženiji asistenti koji i u ovo kasno doba (zbog Covid mjera reći ćemo da nije još ponoć) neumorno rade.
+
+Na Googleu je našao da C zgrada ima n katova te popis naziva zavoda po katovima (si je ime zavoda na i-tom katu). Potom je izbrojio koliko je upaljenih svjetala na svakom katu (ai).
+
+Također je primijetio da se, kako asistenti odlaze i dolaze, broj svjetala po katu povremeno smanji ili poveća za neki y.
+
+U tom mu se trenu pridružio Tomo te se nakon malo pojašnjavanja i on zainteresirao. Odmah je počeo ispitivati Mislava koji zavod radi najaktivnije u uključenom intervalu katova [l, r]. Pomozite Mislavu odgovoriti na Tomina pitanja.
+
+Input
+Prvi red: n - broj katova C zgrade.
+
+U idućih n redova nalazi se broj svjetala na i-tom katu (ai) te, odvojeno razmakom, ime zavoda (si) iz teksta.
+
+Nakon toga: Q - ukupna suma broja upita (upiti tipa c i q, vidi ispod).
+
+U idućih Q redova nalaze se upiti (upit se sastoji od slova i dva broja):
+
+q l r - (query) Tomo pita koje je ime zavoda s najviše upaljenih svjetala od l-tog kata do r-tog kata (uključeno).
+
+ili
+
+c x y - (change) Na x-tom se katu broj svjetala promjeni za y.
+
+Ograničenja:
+
+n + Q ≤ 2e5
+
+ai ≤ 1e5
+
+|si| ≤ 100
+
+1 ≤ l, r ≤ n
+
+1 ≤ x ≤ n
+
+ - 1e5 ≤ y ≤ 1e5 (broj svjetala na svakom katu nikad neće pasti ispod nule)
+
+Napomena: Razmaci u imenima zavoda zamijenjeni su donjom povlakom(_).
+
+Output
+Za svaki od upita koji počinju s q ispišite ime zavoda koji je na katu s najviše upaljenih svjetala u zadanom intervalu.
+
+Ukoliko postoje 2 ili više katova s istim brojem upaljenih svjetala, možete ispisati bilo koji.
+
+Scoring
+U zadatku je moguće dobiti parcijalne bodove za rješenje nešto lakših podzadataka sa smanjenim ograničenjima.
+
+Ograničenja	Bodovi
+Q = 1	1
+n + Q ≤ 2000	1
+postoje samo upiti tipa q	1
+—	2
+ukupno:	5
+Example
+input
+10
+9 zavod_za_primijenjenu_fiziku
+7 zavod_za_primijenjenu_matematiku
+10 zavod_za_primijenjeno_racunarstvo
+9 zoeem
+3 zavod_za_elektrostrojarstvo_i_automatizaciju
+2 zavod_za_visoki_napon_i_energetiku
+8 zavod_za_telekomunikacije
+9 zesoi
+7 zavod_za_automatiku_i_racunalno_inzenjerstvo
+2 zkist
+5
+q 1 4
+c 4 10
+q 2 5
+c 4 -17
+q 1 10
+outputCopy
+zavod_za_primijenjeno_racunarstvo
+zoeem
+zavod_za_primijenjeno_racunarstvo
+Note
+Najviše svjetala od 1 do 4, odgovor je zavod_za_primijenjeno_racunarstvo (10).
+
+Uvećaj broj na 4. katu za 10, sada zoeem ima 19 svjetala.
+
+Najviše svjetla od 2 do 5, odgovor je zoeem (19).
+
+Smanji broj na 4. katu za 17, sada zoeem ima 2 svjetla.
+
+Najviše svjetala od 1 do 10, odgovor je zavod_za_primijenjeno_racunarstvo (10).

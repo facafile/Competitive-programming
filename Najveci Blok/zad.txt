@@ -1,0 +1,36 @@
+Ivan vježba natjecateljsko programiranje na Codeforcesu. Otvorio je problemset na kojem se nalazi popis s n zadataka označenih brojevima od 1 do n, od kojih je Ivan neke već riješio, a neke još nije. Zadaci koje je riješio označio je znakom 1, a one koje nije riješio označio je znakom 0. Ivan ima vremena za riješiti točno k zadataka, pa ga zanima koje zadatke treba riješiti kako bi veličina najvećeg bloka riješenih zadataka bila maksimalna.
+
+Dva zadatka su dio istog bloka riješenih zadataka ako i samo ako su svi zadaci između ta dva zadatka riješeni. Na primjer, ako su zadaci redom označeni 010111101101110, veličina najvećeg bloka riješenih zadataka je 4, te se radi o bloku od 4. do 7. zadatka.
+
+Pomozite Ivanu riješiti ovaj problem tako da pronađete maksimalnu veličinu najvećeg bloka riješenih zadataka.
+
+Input
+U prvom retku nalazi se broj n (1 ≤ n ≤ 105), broj zadataka u problemsetu, i broj k (1 ≤ k ≤ n), broj zadataka koje će Ivan riješiti. U svim testovima je k manji ili jednak broju neriješenih zadataka u problemsetu.
+
+U drugom retku nalazi se znakovni niz s (|s| = n), opis zadataka u problemsetu, gdje si označava je li Ivan riješio i-ti zadatak. Ako ga je riješio, si = 1, inače si = 0.
+
+Output
+U prvom i jedinom retku ispišite jedan broj - veličinu novog najvećeg bloka nakon rješavanja k zadataka.
+
+Examples
+input
+3 1
+000
+output
+1
+input
+6 2
+001010
+output
+4
+input
+9 2
+101001011
+output
+5
+Note
+U prvom test primjeru Ivan može riješiti bilo koji od tri zadataka i tako ostvariti najveći blok veličine 1 (npr. 100).
+
+U drugom test primjeru može riješiti zadatke 2 i 4 i tako ostvariti najveći blok veličine 4 (011110). Prije - https://imgur.com/a/uY1hRig, poslije - https://imgur.com/a/j7sOuuM
+
+U trećem test primjeru može riješiti zadatke 5 i 7 i tako ostvariti najveći blok veličine 5 (101011111).
