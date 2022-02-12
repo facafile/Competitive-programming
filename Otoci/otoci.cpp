@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void obrisiOtok(vector<int> adj[], int x,int n) {
+void obrisiOtok(vector<int> adj[], int x) {
    vector<int> a;
 	for(int i:adj[x]){
 	vector<int>::iterator position = find(adj[i].begin(), adj[i].end(), x);
@@ -98,7 +98,7 @@ int main()
 		cin>>x;
 		if(x==1){
 			cin>>x;
-			obrisiOtok(adj,x-1,n);
+			obrisiOtok(adj,x-1);
 		}
 		else {
 			cin>>x>>y;
