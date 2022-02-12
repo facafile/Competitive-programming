@@ -1,0 +1,14 @@
+Daleko na Tihom oceanu nalazi se N malih otoka. Neki su otoci povezani mostovima, a mostova je ukupno M (svi su mostovi duljine 1). Karlo prati klimatske promjene i svjestan je da se razina mora već neko vrijeme podiže pa je odlučio napraviti simulaciju. Za zadanu mapu otoka, zanima ga koliki je nakraći put kojim može stanovnike s otoka x prebaciti na otok y. Njegova simulacija ima dvije naredbe:
+
+1 x: potonuo je x-ti otok (makni ga s karte)
+
+2 x y: ispisuje najkraći put između otoka x i y (ako nema takvog puta, ispisuje  - 1)
+
+Ispišite rezultat simulacije nakon Q naredbi.
+
+Primjer
+U prvom su redu N i M (N, M ≤ 2000). U idućih su M redova po 2 broja x i y koji označavaju parove otoka između kojih postoji most.
+
+U sljedećem je redu Q (broj naredbi u simulaciji), a u idućih Q (Q ≤ 2000) redova nalaze se naredbe oblika kao u tekstu zadatka.
+
+Za svaku naredbu tipa 2 u zaseban redak ispišite njezin rezultat.
